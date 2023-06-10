@@ -12,7 +12,7 @@ interface imgdata {
   const res = await axios.get(`${baseURL}/getimg`);
   imgdata.value = res.data as imgdata;
 })();
-let imgv = ref(350);
+let imgv = ref(250);
 if (window.innerWidth < 1020) {
   imgv.value = 100;
 }
