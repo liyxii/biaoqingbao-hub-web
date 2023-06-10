@@ -20,16 +20,12 @@ if (window.innerWidth < 1020) {
 
 <template>
   <div class="app">
-    <n-image-group>
-      <n-space>
-        <div class="imgcard" v-for="item in imgdata">
-          <div class="img">
-            <n-image :src="item.url" :width="imgv" lazy object-fit="contain" />
-          </div>
-          <p>{{ item.name }}</p>
-        </div></n-space
-      >
-    </n-image-group>
+    <div class="imgcard" v-for="item in imgdata">
+      <div class="img">
+        <n-image :src="item.url" :width="imgv" lazy object-fit="contain" />
+      </div>
+      <p>{{ item.name }}</p>
+    </div>
   </div>
 </template>
 
