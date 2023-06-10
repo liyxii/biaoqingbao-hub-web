@@ -2,7 +2,7 @@
 import { NImage } from "naive-ui";
 import axios from "axios";
 import { ref } from "vue";
-const baseURL = "https://suwingshub.alww.top";
+const baseURL = "http://127.0.0.1:10001";
 const imgdata = ref();
 interface imgdata {
   url: string;
